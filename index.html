@@ -2,110 +2,116 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
     <title>Smashmagazine</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="container">
-      <nav>
-        <div class="logo">
-          <img src="" alt="">
-        </div>
-
-        <div class="menu-items">
-          <div class="item">
-            <img src="" alt="">
-            <h3>Articles</h3>
-            <p>Design & development</p>
+      <nav class="main-nav">
+        <div class="row">
+          <div class="logo col-1-4 pd-top-20">
+            <img class="fl-left" src="https://d33wubrfki0l68.cloudfront.net/3fbf6ef77e5e00aea7a22423087373169b52ae7e/413ff/images/logo/logo.svg" alt="Smashing Magazine">
           </div>
 
-          <div class="item">
-            <img src="" alt="">
-            <h3>Books</h3>
-            <p>Physical & digital books</p>
+          <div class="menu-items col-1-2">
+            <div class="row">
+              <div class="item col-1-5">
+                <img src="" alt="">
+                <h3>Articles</h3>
+                <p>Design & development</p>
+              </div>
+
+              <div class="item col-1-5">
+                <img src="" alt="">
+                <h3>Books</h3>
+                <p>Physical & digital books</p>
+              </div>
+
+              <div class="item col-1-5">
+                <img src="" alt="">
+                <h3>Events</h3>
+                <p>Conferences & workshops</p>
+              </div>
+
+              <div class="item col-1-5">
+                <img src="" alt="">
+                <h3>Jobs</h3>
+                <p>Find work & employees</p>
+              </div>
+
+              <div class="item col-1-5">
+                <img src="" alt="">
+                <h3>Membership</h3>
+                <p>Webinars & early-birds</p>
+              </div>
+            </div> <!--closing row -->
+
           </div>
 
-          <div class="item">
-            <img src="" alt="">
-            <h3>Events</h3>
-            <p>Conferences & workshops</p>
+          <div class="col-1-4 pd-top-20">
+            <button class="fl-right btn-alt btn btn-sm" type="button" name="button">Topic</button>
+          </div>
+        </div> <!-- closing row -->
+        <div class="topic-container">
+          <div class="search">
+            <input type="text" name="" value="">
+            <p>Search by <span> <img src="" alt=""> </span> </p>
           </div>
 
-          <div class="item">
-            <img src="" alt="">
-            <h3>Jobs</h3>
-            <p>Find work & employees</p>
-          </div>
-
-          <div class="item">
-            <img src="" alt="">
-            <h3>Membership</h3>
-            <p>Webinars & early-birds</p>
-          </div>
-
-        </div>
-
-        <div class="nav-btn">
-          <button type="button" name="button">Topic</button>
-        </div>
+          <div class="topics">
+            <nav>
+              <ul>
+                <li>Articles</li>
+                <li>Books</li>
+                <li>Events</li>
+                <li>Jobs</li>
+                <li>Membership</li>
+              </ul>
+            </nav>
+            <h4>BROWSE ALL TOPICS</h4>
+            <div class="ul-wrapper">
+              <ul>
+                <li>Accessibility</li>
+                <li>Android</li>
+                <li>Animation</li>
+                <li>Apps</li>
+                <li>CSS</li>
+                <li>Design</li>
+                <li>Design Patterns</li>
+                <li>Design Systems</li>
+                <li>E-commerce</li>
+                <li>Freebies</li>
+                <li>Graphics</li>
+                <li>HTML</li>
+                <li>Illustrator</li>
+                <li>Inspiration</li>
+                <li>IOS</li>
+                <li>Javascript</li>
+                <li>Mobile</li>
+                <li>Pattern Libraries</li>
+                <li>Perfomance</li>
+                <li>Photoshop</li>
+                <li>Plugins</li>
+                <li>React</li>
+                <li>Responsive Web Designs</li>
+                <li>Service Workers</li>
+                <li>Sketch</li>
+                <li>Typography</li>
+                <li>UI</li>
+                <li>Usability</li>
+                <li>User Experience</li>
+                <li>Wallpapers</li>
+                <li>Web Design</li>
+                <li>WordPress</li>
+                <li>Workflow</li>
+              </ul>
+            </div> <!-- closing ul-wrapper -->
+          </div> <!-- closing topics -->
+        </div> <!-- closing topic-container -->
       </nav>
 
-      <div class="topic-container">
-        <div class="search">
-          <input type="text" name="" value="">
-          <p>Search by <span> <img src="" alt=""> </span> </p>
-        </div>
 
-        <div class="topics">
-          <nav>
-            <ul>
-              <li>Articles</li>
-              <li>Books</li>
-              <li>Events</li>
-              <li>Jobs</li>
-              <li>Membership</li>
-            </ul>
-          </nav>
-          <h4>BROWSE ALL TOPICS</h4>
-          <div class="ul-wrapper">
-            <ul>
-              <li>Accessibility</li>
-              <li>Android</li>
-              <li>Animation</li>
-              <li>Apps</li>
-              <li>CSS</li>
-              <li>Design</li>
-              <li>Design Patterns</li>
-              <li>Design Systems</li>
-              <li>E-commerce</li>
-              <li>Freebies</li>
-              <li>Graphics</li>
-              <li>HTML</li>
-              <li>Illustrator</li>
-              <li>Inspiration</li>
-              <li>IOS</li>
-              <li>Javascript</li>
-              <li>Mobile</li>
-              <li>Pattern Libraries</li>
-              <li>Perfomance</li>
-              <li>Photoshop</li>
-              <li>Plugins</li>
-              <li>React</li>
-              <li>Responsive Web Designs</li>
-              <li>Service Workers</li>
-              <li>Sketch</li>
-              <li>Typography</li>
-              <li>UI</li>
-              <li>Usability</li>
-              <li>User Experience</li>
-              <li>Wallpapers</li>
-              <li>Web Design</li>
-              <li>WordPress</li>
-              <li>Workflow</li>
-            </ul>
-          </div> <!-- closing ul-wrapper -->
-        </div> <!-- closing topics -->
-      </div> <!-- closing topic-container -->
 
       <div class="latest-articles">
         <h2>Don't Miss These Latest <br> Articles</h2>
