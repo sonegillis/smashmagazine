@@ -1,0 +1,101 @@
+*, *:after, *:before{
+  box-sizing: border-box;
+}
+
+.main-nav{
+  background-color: #d33a2c;
+}
+
+.topic-container{
+  display: none;
+}
+
+.logo img{
+  height: 4.2em;
+  width: 4.2em;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+body::after{
+  content: "991px and above";
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.row::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+[class*='col-']{
+  float: left;
+}
+.col-1-2{
+  width: 50%;
+}
+.col-1-5{
+  width: 20%;
+}
+.col-1-4{
+  width: 25%;
+}
+.row{
+  width: 90%;
+  margin: 0 auto;
+}
+.fl-right{
+  float: right;
+}
+.fl-left{
+  float: left;
+}
+
+.btn-alt{
+  background-color: inherit;
+  border: 3px solid white;
+  color: white;
+}
+.btn-sm{
+  width: 100px;
+}
+.btn-md{
+  width: 150px
+}
+.btn{
+  border-radius: 6px;
+  padding: 8px;
+}
+.pd-top-20{
+  padding-top: 20px;
+}
+@media only screen and (max-width: 991px){
+  body::after{
+    content: "767px - 991px";
+  }
+}
+
+@media only screen and (max-width: 767px){
+  body::after{
+    content: "479px - 767px";
+  }
+}
+
+@media only screen and (max-width: 479px){
+  body::after{
+    content: "0 - 479px";
+  }
+ .menu-items {
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  .main-nav{
+    height: 80px;
+  }
+}
