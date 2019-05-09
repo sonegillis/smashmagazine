@@ -32,8 +32,8 @@ body::after{
 [class*='col-']{
   float: left;
 }
-.col-1-2{
-  width: 48%;
+.topics .col-1-2{
+  width: 50%;
 }
 .col-1-5{
   width: 20%;
@@ -45,14 +45,14 @@ body::after{
   width: 90%;
   margin: 0 auto;
 }
-.main-nav [class*='col-']:nth-child(n+2) {
-  margin-left: 2%;
-}
 .main-nav a {
   text-decoration: none;
 }
-.black-on-hover:hover {
+.black-on-hover a:hover{
   color: black
+}
+.faint-black-on-hover a:hover{
+  color: rgba(0, 0, 0, 0.6);
 }
 .menu-btn:focus {
   background-color: rgba(0,0,0,0.2);
@@ -75,7 +75,6 @@ body::after{
 }
 
 .topics {
-  background-color: yellow;
   display: none;
 }
 
@@ -97,6 +96,89 @@ body::after{
 .pd-top-20{
   padding-top: 20px;
 }
+.bg-blue{
+  background-color: blue;
+}
+.bg-green{
+  background-color: green;
+}
+.sm-nav{
+  text-align: center;
+}
+.sm-nav a{
+  color: white;
+}
+.pd-bottom-20{
+  padding-bottom: 20px;
+}
+/* background color fot the articles and jobs on the main-nav*/
+.color-diff1{
+  background-color: #bc3428;
+}
+/* background color for events on the main-nav */
+.color-diff2{
+  background-color: #c13125;
+}
+/* background color for books and membership on the main-nav */
+.color-diff3{
+  background-color: #d7372a;
+}
+.search input{
+  padding: 18px 0 18px 36px;
+  width: 100%;
+  background: url("../images/search.png") 10px 50% no-repeat,
+              #fff no-repeat;
+  background-size: 1.4em 1.4em;
+  border-radius: 8px;
+  border: 1px solid #d33a2c;
+  margin-bottom: 13px;
+}
+.search input:focus{
+  border: 2.3px dotted black;
+}
+.search img{
+  width: 7.5em;
+}
+.ul-wrapper li{
+  width: 50%;
+  padding-bottom: 20px;
+  float: left;
+}
+.ul-wrapper li a{
+  color: #fff;
+}
+.ul-wrapper {
+  margin-top: 50px;
+}
+.ul-wrapper ul{
+  list-style: none;
+}
+.ul-wrapper ul li::before{
+  display: inline-block;
+  font-weight: bold;
+  width: 0.4em;
+  content: "\2022";
+  color: rgba(0, 0, 0, 0.6);
+}
+h4{
+  color: #fff;
+}
+.txt-center{
+  text-align: center;
+}
+.toggle-color{
+  width: 40%;
+  margin: 0 auto;
+}
+.toggle-color a{
+  display: inline-block;
+  border: 1px solid #fff;
+  margin-bottom: 40px;
+}
+.toggle-color a:hover{
+  color: #d33a2c;
+  background-color: #fff;
+}
 @media only screen and (max-width: 991px){
   body::after{
     content: "767px - 991px";
@@ -116,4 +198,5 @@ body::after{
  .menu-items{
     display: none;
   }
+
 }
