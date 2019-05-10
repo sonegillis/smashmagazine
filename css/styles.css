@@ -111,6 +111,9 @@ body::after{
 .pd-bottom-20{
   padding-bottom: 20px;
 }
+.no-mg {
+  margin: 0;
+}
 /* background color fot the articles and jobs on the main-nav*/
 .color-diff1{
   background-color: #bc3428;
@@ -179,6 +182,87 @@ h4{
   color: #d33a2c;
   background-color: #fff;
 }
+.articles-heading {
+  background-color: white;
+  padding: 50px auto;
+  display: inline-block;
+  box-sizing: content-box !important;
+  margin:0;
+}
+.articles-heading-div {
+  text-align: center;
+  background-color: green;
+  box-sizing: content-box !important;
+  padding: 20px;
+}
+.author::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.author figure {
+  float: left;
+  margin: auto 10px auto 0;
+}
+.article {
+  padding-top: 50px;
+}
+
+.article h2 small {
+  font-size: 0.6em;
+}
+
+.article h2 small i{
+  margin-right: 4px;
+}
+
+.article .author figure img{
+  height: 55px;
+  width: 55px;
+  border: 4px solid #fff;
+  border-radius: 4px;
+  transform: rotate(-10deg);
+  margin-top: 20px;
+}
+
+.article .author figure img:hover {
+  transform: rotate(0deg);
+}
+.article .author .author-name {
+  margin-top: 46px;
+  float: left;
+}
+
+.article a, .article i{
+  color: white;
+  text-decoration: none;
+}
+
+.article-topics ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.article-topics ul li {
+  float: left;
+  padding-left: 16px;
+  font-size: 0.7em;
+}
+
+.article-topics ul li:before {
+  display: inline-block;
+  content: '#';
+  color: rgba(0,0,0,0.5);
+  width: 0.3em;
+  margin-right: 8px;
+}
+
+.article-topics ul:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 @media only screen and (max-width: 991px){
   body::after{
     content: "767px - 991px";
