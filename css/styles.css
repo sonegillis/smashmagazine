@@ -73,6 +73,10 @@ body::after{
   width: 88%;
   margin: 0 auto;
 }
+.container-lg-1 {
+  width: 95%;
+  margin: 0 auto;
+}
 .container-md{
   width: 80%;
   margin: 0 auto;
@@ -303,6 +307,9 @@ h4{
 .mg-top-25{
   margin-top: 25px;
 }
+.mg-top-50{
+  margin-top: 50px;
+}
 .post-author a, .post-author{
   color: rgba(0, 0, 0, 0.7);
   font-weight: bold;
@@ -351,21 +358,24 @@ h4{
   border-radius: 10px;
   padding-bottom: 50px
 }
-.signin-div p a{
+.signin-div p a, .up-next p a{
   color: #fff;
   text-decoration: none;
   border-bottom: 3px solid rgba(255, 255, 255, 0.5)
 }
-.signin-div p{
+.signin-div p, .up-next p{
   color: #fff;
 }
-.signin-div p:nth-of-type(2n){
+.signin-div p:nth-of-type(2n), .up-next p:nth-of-type(3n){
   line-height: 1.6em;
   font-size: 1.25em;
   margin-bottom: 40px;
 }
 .font-lg-1{
   font-size: 1.56em;
+}
+.font-md-1{
+  font-size: 1.4em;
 }
 .bold{
   font-weight: bold;
@@ -384,10 +394,10 @@ h4{
   margin-top: 30px;
   font-size: 0.8em;
 }
-.signin-div .btn{
+.signin-div .btn, .up-next .btn{
   color: #267dcc
 }
-.signin-div .btn:hover{
+.signin-div .btn:hover, .up-next .btn:hover{
   color: red;
 }
 .pd-bottom-80{
@@ -403,6 +413,11 @@ h4{
 }
 .btn-bd-bottom:hover{
   color: red;
+}
+.up-next{
+  background-color: #1b75bb;
+  color: #fff;
+  padding-top: 50px;
 }
 @media only screen and (max-width: 991px){
   body::after{
