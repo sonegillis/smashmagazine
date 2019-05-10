@@ -184,15 +184,12 @@ h4{
 }
 .articles-heading {
   background-color: white;
-  padding: 50px auto;
   display: inline-block;
-  box-sizing: content-box !important;
   margin:0;
+  font-size: 1.875em;
 }
 .articles-heading-div {
   text-align: center;
-  background-color: green;
-  box-sizing: content-box !important;
   padding: 20px;
 }
 .author::after {
@@ -263,6 +260,9 @@ h4{
   display: table;
 }
 
+.margin-bottom-30{
+  margin-bottom: 30px;
+}
 @media only screen and (max-width: 991px){
   body::after{
     content: "767px - 991px";
