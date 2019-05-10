@@ -197,14 +197,10 @@ h4{
   background-color: white;
   padding: 50px auto;
   display: inline-block;
-  box-sizing: content-box !important;
   margin:0;
-}
-.articles-heading-div {
-  text-align: center;
-  background-color: green;
-  box-sizing: content-box !important;
-  padding: 20px;
+  font-size: 1.5em;
+  padding: 7px;
+  font-weight: bold;
 }
 .author::after {
   content: '';
