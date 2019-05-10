@@ -184,12 +184,15 @@ h4{
 }
 .articles-heading {
   background-color: white;
+  padding: 50px auto;
   display: inline-block;
+  box-sizing: content-box !important;
   margin:0;
-  font-size: 1.875em;
 }
 .articles-heading-div {
   text-align: center;
+  background-color: green;
+  box-sizing: content-box !important;
   padding: 20px;
 }
 .author::after {
@@ -238,12 +241,14 @@ h4{
 .article-topics ul{
   list-style: none;
   padding-left: 0;
+  margin: 50px 0;
 }
 
 .article-topics ul li {
   float: left;
-  padding-left: 16px;
-  font-size: 0.7em;
+  padding-right: 16px;
+  font-size: 0.83em;
+  font-weight: bold;
 }
 
 .article-topics ul li:before {
@@ -259,9 +264,8 @@ h4{
   content: "";
   display: table;
 }
-
-.margin-bottom-30{
-  margin-bottom: 30px;
+.mg-bottom-40{
+  margin-bottom: 40px;
 }
 @media only screen and (max-width: 991px){
   body::after{
