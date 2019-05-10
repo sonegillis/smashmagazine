@@ -69,11 +69,18 @@ body::after{
 .cl-both {
   clear: both;
 }
-.container {
+.container-lg {
   width: 88%;
   margin: 0 auto;
 }
-
+.container-md{
+  width: 80%;
+  margin: 0 auto;
+}
+.container-sm{
+  width: 70%;
+  margin: 0 auto;
+}
 .topics {
   display: none;
 }
@@ -82,6 +89,8 @@ body::after{
   background-color: inherit;
   border: 3px solid white;
   color: white;
+  border-radius: 8px;
+  padding: 8px;
 }
 .btn-sm{
   width: 100px;
@@ -89,9 +98,11 @@ body::after{
 .btn-md{
   width: 150px
 }
+.btn-lg{
+  width: 250px;
+}
 .btn{
-  border-radius: 6px;
-  padding: 8px;
+  text-decoration: none;
 }
 .pd-top-20{
   padding-top: 20px;
@@ -337,6 +348,65 @@ h4{
 }
 .no-pd{
   padding: 0;
+}
+.signin-div{
+  width: 98%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 50px
+}
+.signin-div p a{
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5)
+}
+.signin-div p{
+  color: #fff;
+}
+.signin-div p:nth-of-type(2n){
+  line-height: 1.6em;
+  font-size: 1.25em;
+  margin-bottom: 40px;
+}
+.font-lg-1{
+  font-size: 1.56em;
+}
+.bold{
+  font-weight: bold;
+}
+.btn-primary{
+  background-color: #fff;
+  padding: 14px 18px;
+  border-radius: 8px;
+  box-sizing: content-box;
+}
+.btn i{
+  font-size: 0.5em;
+  padding-left: 5px;
+}
+.signin-div p:last-of-type{
+  margin-top: 30px;
+  font-size: 0.8em;
+}
+.signin-div .btn{
+  color: #267dcc
+}
+.signin-div .btn:hover{
+  color: red;
+}
+.pd-bottom-80{
+  padding-bottom: 80px;
+}
+.pd-top-80{
+  padding-top: 80px;
+}
+.btn-bd-bottom{
+  border-bottom: 4px solid #c13125;
+  padding-bottom: 6px;
+  color: black;
+}
+.btn-bd-bottom:hover{
+  color: red;
 }
 @media only screen and (max-width: 991px){
   body::after{
