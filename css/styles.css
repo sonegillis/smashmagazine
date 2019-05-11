@@ -290,6 +290,9 @@ h4{
 .faint{
   opacity: 0.6;
 }
+.color-black {
+  color: black;
+}
 .date{
   text-transform: uppercase;
   font-size: 0.75em;
@@ -418,6 +421,43 @@ h4{
   background-color: #1b75bb;
   color: #fff;
   padding-top: 50px;
+}
+.community-links-wrapper .line{
+  margin-left: 0;
+}
+.community-wrapper .person-of-week figure {
+  border: 4px solid #c13125;
+  transform: rotate(-15deg);
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 80px;
+}
+.community-wrapper .person-of-week figure:hover {
+  transform: rotate(0deg);
+}
+.community-wrapper .person-of-week figure img {
+  height: 250px;
+  width: 250px;
+  margin: auto 150px 150px auto;
+  transform: rotate(15deg);
+
+}
+.person-of-week p:first-of-type{
+  margin: 80px auto 20px auto;
+  font-size: 0.85em;
+}
+.person-of-week p:last-of-type{
+  line-height: 1.6em;
+  opacity: 0.88;
+}
+.person-of-week p:last-of-type a{
+  color: black;
+}
+.person-of-week p:last-of-type .thick-underline{
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,0,0,0.88);
 }
 @media only screen and (max-width: 991px){
   body::after{
