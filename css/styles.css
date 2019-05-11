@@ -227,7 +227,7 @@ h4{
   margin-right: 4px;
 }
 
-.article .author figure img{
+.article .author figure img, .shared figure img{
   height: 55px;
   width: 55px;
   border: 4px solid #fff;
@@ -235,8 +235,11 @@ h4{
   transform: rotate(-10deg);
   margin-top: 20px;
 }
-
-.article .author figure img:hover {
+.shared figure img{
+  border: 4px solid #bc3428;
+  margin: 0 20px 0 0;
+}
+.article .author figure img:hover, .shared figure img:hover {
   transform: rotate(0deg);
 }
 .article .author .author-name {
@@ -444,11 +447,14 @@ h4{
   transform: rotate(15deg);
 
 }
+.person-of-week{
+  margin-bottom: 80px;
+}
 .person-of-week p:first-of-type{
   margin: 80px auto 20px auto;
   font-size: 0.85em;
 }
-.person-of-week p:last-of-type{
+.person-of-week p:last-of-type, .shared-content p:first-of-type{
   line-height: 1.6em;
   opacity: 0.88;
 }
@@ -457,7 +463,26 @@ h4{
 }
 .person-of-week p:last-of-type .thick-underline{
   text-decoration: none;
-  border-bottom: 2px solid rgba(0,0,0,0.88);
+  border-bottom: 1px solid rgba(0,0,0,0.88);
+}
+.shared-content{
+  clear: both;
+  padding-top: 2px;
+}
+.shared-content p:first-of-type{
+  font-size: 17px;
+}
+.shared h3{
+  font-size: 1.5em;
+}
+.shared p:first-of-type a{
+  color: #000;
+}
+.shared-content p:first-of-type a{
+  color: #006fc6;
+}
+.shared {
+  margin-top: 70px;
 }
 @media only screen and (max-width: 991px){
   body::after{
