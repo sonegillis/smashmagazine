@@ -85,6 +85,23 @@ body::after{
   width: 70%;
   margin: 0 auto;
 }
+.smashing-book{
+  padding-top: 30px;
+  background-color: #d33a2c;
+}
+.smashing-book figure{
+  height: 250px;
+  width: 170px;
+  transform: rotate(-10deg);
+}
+.smashing-book figure:hover{
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+}
+.smashing-book img{
+  width: 100%;
+  height: 100%;
+}
 .topics {
   display: none;
 }
@@ -227,17 +244,23 @@ h4{
   margin-right: 4px;
 }
 
-.article .author figure img{
+.article .author figure img, .shared figure img{
   height: 55px;
   width: 55px;
   border: 4px solid #fff;
   border-radius: 4px;
   transform: rotate(-10deg);
+  transition: transform 0.2s;
+
   margin-top: 20px;
 }
-
-.article .author figure img:hover {
+.shared figure img{
+  border: 4px solid #bc3428;
+  margin: 0 20px 0 0;
+}
+.article .author figure img:hover, .shared figure img:hover {
   transform: rotate(0deg);
+  transition: transform 0.2s;
 }
 .article .author .author-name {
   margin-top: 46px;
@@ -304,7 +327,7 @@ h4{
 .latest-posts h1 a:hover{
   color: red;
 }
-.latest-posts-wrapper{
+.latest-posts-wrapper, .guides-wrapper{
   background-color: #f6f3f2
 }
 .mg-top-25{
@@ -337,13 +360,15 @@ h4{
   background-color: #006fc6;
   color: #fff;
 }
-.latest-posts:hover{
+.latest-posts:hover, .guides:hover{
   background-color: #fff;
   transform: scale(1.04);
+  transition: transform 0.2s;
   box-shadow: 0 5px 10px 20px rgba(0, 0, 0, 0.05);
 }
 .latest-posts:hover .container-wrapper{
   transform: scale(0.96);
+  transition: transform 0.2s;
 }
 .more-content i{
   height: 5em;
@@ -361,21 +386,38 @@ h4{
   border-radius: 10px;
   padding-bottom: 50px
 }
-.signin-div p a, .up-next p a{
+.signin-div p a, .up-next p a, .smashing-book p a, .news-letter-wrapper p a{
   color: #fff;
   text-decoration: none;
   border-bottom: 3px solid rgba(255, 255, 255, 0.5)
 }
-.signin-div p, .up-next p{
+.signin-div p, .up-next p, .smashing-book p, .news-letter-wrapper p{
   color: #fff;
 }
-.signin-div p:nth-of-type(2n), .up-next p:nth-of-type(3n){
+.signin-div p:nth-of-type(2n), .up-next p:nth-of-type(3n), .smashing-book p:nth-of-type(3n),
+.news-letter .body-txt{
   line-height: 1.6em;
   font-size: 1.25em;
   margin-bottom: 40px;
 }
+.news-letter-wrapper p:nth-child(2n+1){
+  margin: 0;
+  font-size: 1.2em;
+}
 .font-lg-1{
   font-size: 1.56em;
+}
+.font-sm-1{
+  font-size: 0.9em;
+}
+.font-sm-2{
+  font-size: 0.84em;
+}
+.font-sm-3{
+  font-size: 0.979em;
+}
+.font-lg-2{
+  font-size: 2em;
 }
 .font-md-1{
   font-size: 1.4em;
@@ -397,10 +439,10 @@ h4{
   margin-top: 30px;
   font-size: 0.8em;
 }
-.signin-div .btn, .up-next .btn{
+.signin-div .btn, .up-next .btn, .smashing-book .btn{
   color: #267dcc
 }
-.signin-div .btn:hover, .up-next .btn:hover{
+.signin-div .btn:hover, .up-next .btn:hover, .smashing-book .btn:hover{
   color: red;
 }
 .pd-bottom-80{
@@ -408,6 +450,9 @@ h4{
 }
 .pd-top-80{
   padding-top: 80px;
+}
+.pd-top-60{
+  padding-top: 60px;
 }
 .btn-bd-bottom{
   border-bottom: 4px solid #c13125;
@@ -422,12 +467,13 @@ h4{
   color: #fff;
   padding-top: 50px;
 }
-.community-links-wrapper .line{
+.community-links-wrapper .line, .guides-wrapper .line{
   margin-left: 0;
 }
 .community-wrapper .person-of-week figure {
   border: 4px solid #c13125;
   transform: rotate(-15deg);
+  transition: transform 0.2s;
   width: 200px;
   height: 200px;
   border-radius: 5px;
@@ -436,6 +482,7 @@ h4{
 }
 .community-wrapper .person-of-week figure:hover {
   transform: rotate(0deg);
+  transition: transform 0.2s;
 }
 .community-wrapper .person-of-week figure img {
   height: 250px;
@@ -444,11 +491,14 @@ h4{
   transform: rotate(15deg);
 
 }
+.person-of-week{
+  margin-bottom: 80px;
+}
 .person-of-week p:first-of-type{
   margin: 80px auto 20px auto;
   font-size: 0.85em;
 }
-.person-of-week p:last-of-type{
+.person-of-week p:last-of-type, .shared-content p:first-of-type{
   line-height: 1.6em;
   opacity: 0.88;
 }
@@ -457,7 +507,109 @@ h4{
 }
 .person-of-week p:last-of-type .thick-underline{
   text-decoration: none;
-  border-bottom: 2px solid rgba(0,0,0,0.88);
+  border-bottom: 1px solid rgba(0,0,0,0.88);
+}
+.shared-content{
+  clear: both;
+  padding-top: 2px;
+}
+.shared-content p:first-of-type{
+  font-size: 17px;
+}
+.shared h3{
+  font-size: 1.5em;
+}
+.shared p:first-of-type a{
+  color: #000;
+}
+.shared-content p:first-of-type a{
+  color: #006fc6;
+}
+.shared {
+  margin-top: 70px;
+}
+.smashing-book a:last-of-type{
+  margin-bottom: 50px;
+}
+.curated-posts-heading{
+  margin-left: 10px;
+}
+.guides{
+  margin-top: 40px;
+}
+.guides h6{
+  margin-bottom: 8px;
+}
+.guides a{
+  color: #006fc6;
+  font-size: 1.12em;
+}
+.guides ul li{
+  margin-bottom: 10px;
+  list-style: none;
+}
+.guides ul li::before{
+  color: #c13125;
+  content: "\2022";
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.guides ul{
+  padding-left: 10px;
+}
+.news-letter-container{
+  background-color: #bc3428;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.news-letter input{
+  padding: 15px;
+}
+.news-letter input, .news-letter .btn{
+  display: block;
+  width: 70%;
+  border-radius: 8px;
+  margin: 20px auto 0 auto;
+}
+.news-letter p:last-of-type{
+  font-size: 0.85em;
+  margin-top: 20px;
+  width: 70%;
+  margin: 20px auto 10px auto;
+}
+.news-letter .body-txt{
+  margin: 0;
+}
+.all-topics{
+  position: relative;
+  background-color: #d33a2c;
+  color: #fff;
+  font-style: normal;
+  padding-top: 40px;
+}
+.all-topics .ul-wrapper ul li{
+  margin-left: -34px;
+}
+.all-topics .ul-wrapper{
+  margin-top: 35px;
+}
+.all-topics .ul-wrapper ul li a{
+  text-decoration: none;
+}
+.about-smashing p{
+  margin: 0 0 5px 0;
+}
+
+.about-smashing a, .footer a{
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+.footer ul li{
+  padding-left: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 991px){
   body::after{
