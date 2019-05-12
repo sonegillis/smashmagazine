@@ -327,7 +327,7 @@ h4{
 .latest-posts h1 a:hover{
   color: red;
 }
-.latest-posts-wrapper{
+.latest-posts-wrapper, .guides-wrapper{
   background-color: #f6f3f2
 }
 .mg-top-25{
@@ -360,7 +360,7 @@ h4{
   background-color: #006fc6;
   color: #fff;
 }
-.latest-posts:hover{
+.latest-posts:hover, .guides:hover{
   background-color: #fff;
   transform: scale(1.04);
   transition: transform 0.2s;
@@ -386,24 +386,32 @@ h4{
   border-radius: 10px;
   padding-bottom: 50px
 }
-.signin-div p a, .up-next p a, .smashing-book p a{
+.signin-div p a, .up-next p a, .smashing-book p a, .news-letter-wrapper p a{
   color: #fff;
   text-decoration: none;
   border-bottom: 3px solid rgba(255, 255, 255, 0.5)
 }
-.signin-div p, .up-next p, .smashing-book p{
+.signin-div p, .up-next p, .smashing-book p, .news-letter-wrapper p{
   color: #fff;
 }
-.signin-div p:nth-of-type(2n), .up-next p:nth-of-type(3n), .smashing-book p:nth-of-type(3n){
+.signin-div p:nth-of-type(2n), .up-next p:nth-of-type(3n), .smashing-book p:nth-of-type(3n),
+.news-letter .body-txt{
   line-height: 1.6em;
   font-size: 1.25em;
   margin-bottom: 40px;
+}
+.news-letter-wrapper p:nth-child(2n+1){
+  margin: 0;
+  font-size: 1.2em;
 }
 .font-lg-1{
   font-size: 1.56em;
 }
 .font-sm-1{
   font-size: 0.9em;
+}
+.font-sm-2{
+  font-size: 0.84em;
 }
 .font-lg-2{
   font-size: 2em;
@@ -428,10 +436,10 @@ h4{
   margin-top: 30px;
   font-size: 0.8em;
 }
-.signin-div .btn, .up-next .btn{
+.signin-div .btn, .up-next .btn, .smashing-book .btn{
   color: #267dcc
 }
-.signin-div .btn:hover, .up-next .btn:hover{
+.signin-div .btn:hover, .up-next .btn:hover, .smashing-book .btn:hover{
   color: red;
 }
 .pd-bottom-80{
@@ -439,6 +447,9 @@ h4{
 }
 .pd-top-80{
   padding-top: 80px;
+}
+.pd-top-60{
+  padding-top: 60px;
 }
 .btn-bd-bottom{
   border-bottom: 4px solid #c13125;
@@ -453,7 +464,7 @@ h4{
   color: #fff;
   padding-top: 50px;
 }
-.community-links-wrapper .line{
+.community-links-wrapper .line, .guides-wrapper .line{
   margin-left: 0;
 }
 .community-wrapper .person-of-week figure {
@@ -516,6 +527,53 @@ h4{
 }
 .smashing-book a:last-of-type{
   margin-bottom: 50px;
+}
+.curated-posts-heading{
+  margin-left: 10px;
+}
+.guides{
+  margin-top: 40px;
+}
+.guides h6{
+  margin-bottom: 8px;
+}
+.guides a{
+  color: #006fc6;
+  font-size: 1.12em;
+}
+.guides ul li{
+  margin-bottom: 10px;
+  list-style: none;
+}
+.guides ul li::before{
+  color: #c13125;
+  content: "\2022";
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.guides ul{
+  padding-left: 10px;
+}
+.news-letter-container{
+  background-color: #bc3428;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.news-letter input{
+  padding: 15px;
+}
+.news-letter input, .news-letter .btn{
+  display: block;
+  width: 70%;
+  border-radius: 8px;
+  margin: 20px auto 0 auto;
+}
+.news-letter p:last-of-type{
+  font-size: 0.85em;
+  margin-top: 20px;
+  width: 70%;
+  margin: 20px auto 10px auto;
 }
 @media only screen and (max-width: 991px){
   body::after{
