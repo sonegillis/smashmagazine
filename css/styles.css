@@ -648,6 +648,11 @@ h4{
  .latest-articles div:nth-child(2){
    padding-top: 130px;
  }
+ .guides-wrapper div:nth-child(5)::after{
+   clear: both;
+   content: '';
+   display: table;
+ }
  body::after{
    content: "0px - 700px;"
  }
@@ -849,6 +854,9 @@ h4{
   .ul-wrapper{
     text-align: center;
   }
+  .news-letter-container{
+    clear: both;
+  }
 
 }
 
@@ -960,11 +968,62 @@ h4{
     font-size: 1.4em;
     margin: 0 auto;
   }
-  .community-wrapper{
+  .community-wrapper, .guides-wrapper{
     position: relative;
   }
-  .community-links-wrapper{
+  .community-links-wrapper, .curated-posts-heading{
     position: absolute;
     transform: rotate(90deg);
+    left: -84px;
+    top: 60px;
+  }
+  .person-of-week .about{
+    margin-top: 50px;
+    width: 70%;
+  }
+  .person-of-week .person-img{
+    width: 20%;
+  }
+  .shared{
+    float: left;
+    width: 50%;
+  }
+  .smashing-book .container-sm{
+    position: relative
+  }
+  .smashing-book .container-lg-1 p:last-of-type{
+    width: 60%;
+  }
+  .smashing-book .container-sm figure{
+    position: absolute;
+    right: 0;
+    top: -80px;
+    width: 230px;
+    height: 330px;
+  }
+  .guides{
+    width: 33.3%;
+  }
+  .news-letter-container{
+    width: 66.6%;
+    float: left;
+    clear: none;
+    font-size: 1em;
+  }
+  .news-letter p:first-of-type{
+    font-size: 2.3em !important;
+  }
+  .body-txt{
+    font-size: 1.6em;
+  }
+  .news-letter .btn, .news-letter input, .news-letter p:last-of-type{
+    width: 40%;
+  }
+  .ul-wrapper li{
+    font-size: 1.6em;
+  }
+  .footer ul{
+    width: 60%;
+    margin: 0 auto;
   }
 }
