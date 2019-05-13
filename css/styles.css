@@ -348,6 +348,8 @@ h4{
   color: rgba(0, 0, 0, 0.8)
 }
 .more-content{
+  position: absolute;
+  bottom: 0;
   width: 90px;
   height: 80px;
   text-align: center;
@@ -355,6 +357,7 @@ h4{
 }
 .latest-posts{
   cursor: pointer;
+  position: relative;
 }
 .latest-posts:hover .more-content{
   background-color: #006fc6;
@@ -485,10 +488,10 @@ h4{
   transition: transform 0.2s;
 }
 .community-wrapper .person-of-week figure img {
-  height: 250px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
   margin: auto 150px 150px auto;
-  transform: rotate(15deg);
+  transform: rotate(0deg);
 
 }
 .person-of-week{
@@ -500,7 +503,6 @@ h4{
 }
 .person-of-week p:last-of-type, .shared-content p:first-of-type{
   line-height: 1.6em;
-  opacity: 0.88;
 }
 .person-of-week p:last-of-type a{
   color: black;
@@ -510,10 +512,10 @@ h4{
   border-bottom: 1px solid rgba(0,0,0,0.88);
 }
 .shared-content{
-  clear: both;
+  clear: left;
   padding-top: 2px;
 }
-.shared-content p:first-of-type{
+.shared-content p:last-of-type{
   font-size: 17px;
 }
 .shared h3{
@@ -521,9 +523,16 @@ h4{
 }
 .shared p:first-of-type a{
   color: #000;
+  opacity: 0.85;
 }
-.shared-content p:first-of-type a{
+.shared-content p:last-of-type a{
   color: #006fc6;
+}
+.shared figure{
+  width: 10%
+}
+.shared p:first-of-type{
+  width: 85%;
 }
 .shared {
   margin-top: 70px;
@@ -614,6 +623,10 @@ h4{
 .menu-items{
    display: none;
  }
+ .latest-posts{
+   position: relative;
+   height: 500px;
+ }
  body::after{
    content: "0px - 700px;"
  }
@@ -667,24 +680,29 @@ h4{
     display: none;
   }
   .article {
+    position: relative;
     float: left;
     width: 50%;
-    padding-bottom: 100%;
-    margin-bottom: -100%;
+    height: 500px;
+    z-index: 0;
+  }
+  .article .arrow{
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
   }
   .pd-top-150{
       padding-top: 150px;
   }
 
-  .article:first-of-type {
-    position: relative;
-  }
   .articles-heading-div{
       position: absolute;
       top: 0;
-      left: 55%;
+      left: 28%;
       width: 400px;
       margin-top: 40px;
+      z-index: 1;
   }
 
   .latest-articles::after{
@@ -692,16 +710,16 @@ h4{
     display: table;
     content: "";
   }
-  .column-wrapper{
-    overflow: hidden;
+  .latest-articles{
+    position: relative;
   }
 .latest-posts{
   width: 50%;
   float: left;
 }
 .signin-div{
-  clear: left;
-  margin-top: 50px;
+  margin: 50px auto;
+  width: 86%;
 }
 .guides{
   width: 50%;
@@ -710,11 +728,74 @@ h4{
 .sm-nav{
   display: none;
 }
+.person-of-week .person-img{
+  float: left;
+  width: 40%;
+}
+.person-of-week figure{
+  margin-top: 50px;
+}
+.person-of-week p:nth-child(2), .shared p{
+  font-size: 1.2em !important;
+}
+.person-of-week .about{
+  float: right;
+  width: 60%;
+}
+.person-of-week .about p:first-of-type{
+  margin: 0;
+}
+.community-links-wrapper h5:last-of-type{
+  display: inline-block;
+}
+.community-links-wrapper{
+  margin-bottom: 60px;
+}
+.shared figure{
+  width: 10%;
+}
+.shared-content{
+  width: 85%;
+  float: right;
+}
+.shared-content p:first-of-type{
+  float: none;
+  margin-top: 0;
+}
+.shared::after{
+  clear: both;
+  content: '';
+  display: table;
+}
 }
 
 @media only screen and (min-width: 991px){
   body::after{
     content: "991px and above";
   }
+  .articles-heading-div{
+      left: 34%;
+  }
+  .ul-wrapper ul li a{
+    font-size: 1.6em;
+  }
+  .ul-wrapper ul li{
+    float: none;
+    width: auto;
+    display: inline-block;
+  }
+  .ul-wrapper ul li::before{
+    font-weight: 700;
 
+  }
+  .all-topics .ul-wrapper ul li {
+    margin-left: 0;
+  }
+  .ul-wrapper{
+    text-align: center;
+  }
+  .latest-posts{
+    width: 33%;
+    height: 500px;
+  }
 }

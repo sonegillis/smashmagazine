@@ -128,13 +128,13 @@
     </nav>
 
     <div class="latest-articles">
-      <div class="column-wrapper">
+      <div class="articles-heading-div txt-center">
+        <p class="no-mg txt-center articles-heading">Don't Miss These Latest</p><br>
+        <p class="articles-heading">Articles</p>
+      </div>
+      <div class="column-wrapper-2">
         <div class="color-diff1 article pd-top-150">
           <div class="container-lg">
-            <div class="articles-heading-div txt-center">
-              <p class="no-mg txt-center articles-heading">Don't Miss These Latest</p><br>
-              <p class="articles-heading">Articles</p>
-            </div>
             <div class="author">
               <figure>
                 <a href="#">
@@ -155,7 +155,9 @@
                 <li> <a href="#">UI <sup>68</sup> </a> </li>
               </ul>
             </div>
-            <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="arrow">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
           </div>
         </div><!-- closing article -->
 
@@ -181,11 +183,13 @@
                 <li> <a href="#">Optimization <sup>52</sup> </a> </li>
               </ul>
             </div>
-            <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="arrow">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
           </div>
         </div><!-- closing article -->
       </div><!-- column wrapper -->
-      <div class="column-wrapper">
+      <div class="column-wrapper-2">
         <div class="color-diff1 article">
           <div class="container-lg">
             <div class="author">
@@ -207,7 +211,9 @@
                 <li> <a href="#">Tools <sup>188</sup> </a> </li>
               </ul>
             </div>
-            <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="arrow">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
           </div>
         </div><!-- closing article -->
 
@@ -232,7 +238,9 @@
                 <li> <a href="#">Accessibility <sup>188</sup> </a> </li>
               </ul>
             </div> <!-- closing article-topics -->
-            <i class="fas fa-long-arrow-alt-right mg-bottom-40"></i>
+            <div class="arrow">
+              <i class="fas fa-long-arrow-alt-right mg-bottom-40"></i>
+            </div>
           </div> <!-- closing container -->
         </div><!-- closing article -->
       </div>
@@ -243,6 +251,7 @@
         <div class="line inline-b no-mg"></div>
         <h5 class="inline-b no-mg">LATEST POSTS</h5>
       </div>
+
 
       <div class="latest-posts">
         <div class="container-wrapper">
@@ -256,44 +265,48 @@
                and how to avoid them.
             </p>
           </div>
-          <div class="more-content">
-            <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        <div class="more-content">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div> <!-- closing latest-posts -->
+
+      <div class="latest-posts">
+        <div class="container-wrapper">
+          <div class="container-lg">
+            <p class="faint date">7 days ago</p>
+            <h1 class="no-mg"> <a href="#">Digging Into Display Property: Box Generation.</a> </h1>
+            <p class="mg-top-25 post-author">by <a href="#">Rachel Andrew</a> </p>
+            <p class="post-content">
+               Continuing a series on <small>display</small> property in CSS, this time Rachel Andrew
+               takes a look at the values which control box generation, for those times when you don't
+               want generate a box at all.
+            </p>
           </div>
         </div>
-      </div> <!-- closing latest-posts -->
-
-      <div class="latest-posts">
-        <div class="container-lg">
-          <p class="faint date">7 days ago</p>
-          <h1 class="no-mg"> <a href="#">Digging Into Display Property: Box Generation.</a> </h1>
-          <p class="mg-top-25 post-author">by <a href="#">Rachel Andrew</a> </p>
-          <p class="post-content">
-             Continuing a series on <small>display</small> property in CSS, this time Rachel Andrew
-             takes a look at the values which control box generation, for those times when you don't
-             want generate a box at all.
-          </p>
-        </div>
         <div class="more-content">
           <i class="fas fa-long-arrow-alt-right"></i>
         </div>
       </div> <!-- closing latest-posts -->
 
       <div class="latest-posts">
-        <div class="container-lg">
-          <p class="faint date">8 days ago</p>
-          <h1 class="no-mg"> <a href="#">The Wonders of May(2019 Wallpapers Edition)</a> </h1>
-          <p class="mg-top-25 post-author">by <a href="#">Cosima Mielke</a> </p>
-          <p class="post-content">
-             Artist and designers across the globe once again got out their favorite tools
-             and designed unique and inspiring wallpapers to welcome the new month. Available with
-             and without a calendar for May 2019. Enjoy!
-          </p>
+        <div class="container-wrapper">
+          <div class="container-lg">
+            <p class="faint date">8 days ago</p>
+            <h1 class="no-mg"> <a href="#">The Wonders of May(2019 Wallpapers Edition)</a> </h1>
+            <p class="mg-top-25 post-author">by <a href="#">Cosima Mielke</a> </p>
+            <p class="post-content">
+               Artist and designers across the globe once again got out their favorite tools
+               and designed unique and inspiring wallpapers to welcome the new month. Available with
+               and without a calendar for May 2019. Enjoy!
+            </p>
+          </div>
         </div>
         <div class="more-content">
           <i class="fas fa-long-arrow-alt-right"></i>
         </div>
       </div> <!-- closing latest-posts -->
-
+      <div class="cl-both"></div>
       <div class="signin-div color-diff3 txt-center">
         <div class="container-md">
           <figure>
@@ -310,8 +323,9 @@
         </div>
       </div> <!-- closing signin-div -->
 
-      <div class="column-wrapper">
-        <div class="latest-posts">
+
+      <div class="latest-posts">
+        <div class="container-wrapper">
           <div class="container-lg">
             <p class="faint date">12 days ago</p>
             <h1 class="no-mg"> <a href="#">Getting To Know The MutationObserver API</a> </h1>
@@ -323,12 +337,14 @@
                make observing for DOM changes ...
             </p>
           </div>
-          <div class="more-content">
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div> <!-- closing latest-posts -->
+        </div>
+        <div class="more-content">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div> <!-- closing latest-posts -->
 
-        <div class="latest-posts">
+      <div class="latest-posts">
+        <div class="container-wrapper">
           <div class="container-lg">
             <p class="faint date">13 days ago</p>
             <h1 class="no-mg"> <a href="#">Privacy UX: Privacy-Aware Design Framework</a> </h1>
@@ -339,30 +355,33 @@
                better, with the user's privacy in mind.
             </p>
           </div>
-          <div class="more-content">
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div> <!-- closing latest-posts -->
-      </div>
+        </div>
+        <div class="more-content">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div> <!-- closing latest-posts -->
 
-      <div class="column-wrapper">
-        <div class="latest-posts">
+
+      <div class="latest-posts">
+        <div class="container-wrapper">
           <div class="container-lg">
-            <p class="faint date">14 days ago</p>
-            <h1 class="no-mg"> <a href="#">It's Here! Meet "Art Direction For The Web," A New Smashing Book</a> </h1>
+            <p class="faint date">13 days ago</p>
+            <h1 class="no-mg"> <a href="#">Privacy UX: Privacy-Aware Design Framework</a> </h1>
             <p class="mg-top-25 post-author">by <a href="#">Vitaly Friedman</a> </p>
             <p class="post-content">
-               Art direction has been part of advertising and print design for over 100 years,
-               but on the web art direction is rare, and there have been few meaningful conversations about
-               it. "Art Direction for the Web" by Andy Clarke changes that and explains art ...
+               In this final article of the series, we'll look into notifications UX
+               and permission request, and how we can design the experience around them
+               better, with the user's privacy in mind.
             </p>
           </div>
-          <div class="more-content">
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div> <!-- closing latest-posts -->
+        </div>
+        <div class="more-content">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div> <!-- closing latest-posts -->
 
-        <div class="latest-posts">
+      <div class="latest-posts">
+        <div class="container-wrapper">
           <div class="container-lg">
             <p class="faint date">15 days ago</p>
             <h1 class="no-mg"> <a href="#">Building A Node.js Express API To Convert Markdown To HTML. </a> </h1>
@@ -372,13 +391,14 @@
                in the context of buiding an application that converts Markdown syntax to HTML.
             </p>
           </div>
-          <div class="more-content">
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div> <!-- closing latest-posts -->
-      </div>
+        </div>
+        <div class="more-content">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div> <!-- closing latest-posts -->
+      <div class="cl-both"></div>
 
-      <div class="signin-div color-diff3 txt-center">
+      <div class="signin-div color-diff3 txt-center mg-top-50">
         <div class="container-md">
           <figure>
             <a href="#"><img src="https://d33wubrfki0l68.cloudfront.net/72280e1450d4ecfc45ef96ea00b27b4bf4ef5d06/eb759/images/smashing-cat/cat-smashing-tv-2.svg"
@@ -417,28 +437,34 @@
           <h5 class="no-mg">LINKS</h5>
         </div>
         <div class="person-of-week">
-          <figure>
-            <a href="#"><img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/96775526-5a09-44f2-accd-072e7e319e35/stefan-baumgartner-250px-opt.png"
-               alt="Stefan Baumgartner, the person of the week"></a>
-          </figure>
-          <p class="color-black faint">PERSON OF THE WEEK</p>
-          <p>
-            <a href="#">Stefan Baumgartner</a> is a web developer based in Linz, Austria.
-            Committed to performance and making the web a faster place, he is part of the UX team at
-            <a href="#">Dynatrace</a>. Stefan co-hosts the <a class="thick-underline" href="#">Working Draft</a>
-            podcast and organizes events for the tech community, especially in his hometown. You can find him
-            <a href="#">blogging</a> and <a href="#">speaking</a> about performance, web/design ops, progressive
-            enhancement, and tooling at conferences and meetups around the world. In 2017, he published his first book
-            <a href="#"><i>Front-End </i></a><a class="thick-underline" href="#"> <i>Tooling with Gulp, Bower, and Yeoman</i> </a>. Thank you for your contributions
-            to the community, dear Stefan!
-          </p>
+          <div class="person-img">
+            <figure>
+              <a href="#"><img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/96775526-5a09-44f2-accd-072e7e319e35/stefan-baumgartner-250px-opt.png"
+                 alt="Stefan Baumgartner, the person of the week"></a>
+            </figure>
+          </div>
+          <div class="about">
+            <p class="color-black faint">PERSON OF THE WEEK</p>
+            <p>
+              <a href="#">Stefan Baumgartner</a> is a web developer based in Linz, Austria.
+              Committed to performance and making the web a faster place, he is part of the UX team at
+              <a href="#">Dynatrace</a>. Stefan co-hosts the <a class="thick-underline" href="#">Working Draft</a>
+              podcast and organizes events for the tech community, especially in his hometown. You can find him
+              <a href="#">blogging</a> and <a href="#">speaking</a> about performance, web/design ops, progressive
+              enhancement, and tooling at conferences and meetups around the world. In 2017, he published his first book
+              <a href="#"><i>Front-End </i></a><a class="thick-underline" href="#"> <i>Tooling with Gulp, Bower, and Yeoman</i> </a>. Thank you for your contributions
+              to the community, dear Stefan!
+            </p>
+          </div>
+          <div class="cl-both"></div>
         </div> <!-- closing person-of-week -->
+
         <div class="shared">
           <figure class="fl-left no-mg">
             <a href="#"><img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/fcec015b-a1a0-4931-b6a2-583da7380ca2/tobias-ahlin-opt.png"
                              alt="Tobias Ahlin"></a>
           </figure>
-          <p class="fl-left faint bold"> <a href="#">Jorge Moren</a> shared </p>
+          <p class="fl-right faint bold"> <a href="#">Jorge Moren</a> shared </p>
           <div class="shared-content">
             <h3>CSS3 Transform.</h3>
             <p><small>May 8, 2019</small> — Jorge Moreno’s <a href="#">CSS3 Transform Functions Playground</a>
@@ -450,7 +476,7 @@
             <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ad5e53db-6658-4c6d-852a-552ccd3ee704/patrick-faller-opt.png"
             alt="Patrick Faller">
           </figure>
-          <p class="fl-left faint bold"><a href="#">Pablo Stanley</a> shared</p>
+          <p class="fl-right faint bold"><a href="#">Pablo Stanley</a> shared</p>
           <div class="shared-content">
             <h3>Designer First World Problems</h3>
             <p><small>May 8, 2019</small> — Designer first world problems? Pablo Stanley shares a
@@ -463,7 +489,7 @@
             <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/665e5168-b03b-42a1-9a8e-8a01fa1b7b15/jorge-moreno-opt.png"
              alt="Jorge Moreno">
           </figure>
-          <p class="fl-left faint bold"><a href="#">Lebedev Konstantin</a> shared</p>
+          <p class="fl-right faint bold"><a href="#">Lebedev Konstantin</a> shared</p>
           <div class="shared-content">
             <h3>Sortable</h3>
             <p><small>May 7, 2019</small> — <a href="#">Sortable</a>
@@ -476,7 +502,7 @@
             <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5dcb269d-429d-49fa-9cf6-eac7b3a236a4/pablo-stanley-opt.png"
             alt="Pablo Stanley">
           </figure>
-          <p class="fl-left faint bold"><a href="#">Chris Coyier</a> shared</p>
+          <p class="fl-right faint bold"><a href="#">Chris Coyier</a> shared</p>
           <div class="shared-content">
             <h3>Background SVG Hovers With Mask</h3>
             <p><small>May 3, 2019</small> — Did you know that you can use a mask if you need to link to a
@@ -489,7 +515,7 @@
             <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8e6631cb-0ec3-461f-9c5f-11f60351c036/lebedev-konstantin-opt.png"
             alt="Lebedev Konstantin">
           </figure>
-          <p class="fl-left faint bold"><a href="#">Erin Kissane</a> shared</p>
+          <p class="fl-right faint bold"><a href="#">Erin Kissane</a> shared</p>
           <div class="shared-content">
             <h3>The Elements Of Content Strategy</h3>
             <p><small>May 2, 2019</small> — Exploring content strategy and how you can do it well, Erin Kissane’s
@@ -502,7 +528,7 @@
             <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6a6c1095-65e9-4fa5-a546-84861064b7a2/chris-coyier-opt.png"
             alt="Chris Coyier">
           </figure>
-          <p class="fl-left faint bold"><a href="#">Jason Pamental</a> shared</p>
+          <p class="fl-right faint bold"><a href="#">Jason Pamental</a> shared</p>
           <div class="shared-content">
             <h3>Reinventing Web Font Performance</h3>
             <p><small>Apr 30, 2019</small> — "Incremental transfer” is about to change web font delivery and performance.
@@ -534,7 +560,7 @@
         <p class="no-mg font-sm-2 bold">POST</p>
       </div>
 
-      <div class="column-wrapper">
+      <div class="column-wrapper-2">
         <div class="guides pd-bottom-80 pd-top-60">
           <div class="container-md">
             <h6 class="faint">GUIDES</h6>
@@ -569,7 +595,7 @@
         </div><!-- closing guides -->
       </div><!--closing column-wrapper-->
 
-      <div class="column-wrapper">
+      <div class="column-wrapper-2">
         <div class="guides">
           <div class="container-md pd-bottom-80 pd-top-60">
             <h6>GUIDES</h6>
