@@ -178,6 +178,7 @@ body::after{
   width: 50%;
   padding-bottom: 20px;
   float: left;
+  /* background-color: orange; */
 }
 .ul-wrapper li a{
   color: #fff;
@@ -194,6 +195,9 @@ body::after{
   width: 0.4em;
   content: "\2022";
   color: rgba(0, 0, 0, 0.6);
+}
+.all-topics .ul-wrapper ul li a{
+  font-size: 0.8em;
 }
 h4{
   color: #fff;
@@ -403,9 +407,16 @@ h4{
   font-size: 1.25em;
   margin-bottom: 40px;
 }
+.news-letter p:first-of-type{
+  font-size: 1.5em !important;
+  margin-bottom: 30px !important;
+}
 .news-letter-wrapper p:nth-child(2n+1){
   margin: 0;
   font-size: 1.2em;
+}
+.news-letter-container{
+  font-size: 0.8em;
 }
 .font-lg-1{
   font-size: 1.56em;
@@ -597,9 +608,7 @@ h4{
   font-style: normal;
   padding-top: 40px;
 }
-.all-topics .ul-wrapper ul li{
-  margin-left: -34px;
-}
+
 .all-topics .ul-wrapper{
   margin-top: 35px;
 }
@@ -713,71 +722,105 @@ h4{
   .latest-articles{
     position: relative;
   }
-.latest-posts{
-  width: 50%;
-  float: left;
-}
-.signin-div{
-  margin: 50px auto;
-  width: 86%;
-}
-.guides{
-  width: 50%;
-  float: left;
-}
-.sm-nav{
-  display: none;
-}
-.person-of-week .person-img{
-  float: left;
-  width: 40%;
-}
-.person-of-week figure{
-  margin-top: 50px;
-}
-.person-of-week p:nth-child(2), .shared p{
-  font-size: 1.2em !important;
-}
-.person-of-week .about{
-  float: right;
-  width: 60%;
-}
-.person-of-week .about p:first-of-type{
-  margin: 0;
-}
-.community-links-wrapper h5:last-of-type{
-  display: inline-block;
-}
-.community-links-wrapper{
-  margin-bottom: 60px;
-}
-.shared figure{
-  width: 10%;
-}
-.shared-content{
-  width: 85%;
-  float: right;
-}
-.shared-content p:first-of-type{
-  float: none;
-  margin-top: 0;
-}
-.shared::after{
-  clear: both;
-  content: '';
-  display: table;
-}
-}
-
-@media only screen and (min-width: 991px){
-  body::after{
-    content: "991px and above";
+  .latest-posts{
+    width: 50%;
+    float: left;
+  }
+  .signin-div{
+    margin: 50px auto;
+    width: 86%;
+  }
+  .guides{
+    width: 50%;
+    float: left;
+  }
+  .sm-nav{
+    display: none;
+  }
+  .person-of-week .person-img{
+    float: left;
+    width: 40%;
+  }
+  .person-of-week figure{
+    margin-top: 50px;
+  }
+  .person-of-week p:nth-child(2), .shared p{
+    font-size: 1.2em !important;
+  }
+  .person-of-week .about{
+    float: right;
+    width: 60%;
+  }
+  .person-of-week .about p:first-of-type{
+    margin: 0;
+  }
+  .community-links-wrapper h5:last-of-type{
+    display: inline-block;
+  }
+  .community-links-wrapper{
+    margin-bottom: 60px;
+  }
+  .shared figure{
+    width: 10%;
+  }
+  .shared-content{
+    width: 85%;
+    float: right;
+  }
+  .shared-content p:first-of-type{
+    float: none;
+    margin-top: 0;
+  }
+  .shared::after{
+    clear: both;
+    content: '';
+    display: table;
+  }
+  .smashing-book .container-sm{
+    width: 88%;
+  }
+  .smashing-book figure{
+    margin: 0 auto 50px auto;
+  }
+  .curated-posts-heading p:last-of-type {
+    display: inline-block;
+  }
+  .guides-wrapper .guides{
+    height: 600px;
+  }
+  .guides {
+    margin-top: 10px;
+  }
+  .news-letter-wrapper .news-letter p:first-of-type{
+    font-size: 2.3em;
+    padding-bottom: 30px;
+  }
+  .news-letter figure{
+    width: 400px;
+    margin: 40px auto;
+  }
+  .all-topics{
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .all-topics .footer{
+    position: relative;
+    width: 70%;
+    font-size: 0.8em;
+    margin: 50px auto;
+  }
+  .all-topics figure {
+    position: absolute;
+    width: 200px;
+    left: -200px;
+    top: -100px;
+    height: 200px;
   }
   .articles-heading-div{
       left: 34%;
   }
   .ul-wrapper ul li a{
-    font-size: 1.6em;
+    font-size: 1em;
   }
   .ul-wrapper ul li{
     float: none;
@@ -798,4 +841,11 @@ h4{
     width: 33%;
     height: 500px;
   }
+}
+
+@media only screen and (min-width: 991px){
+  body::after{
+    content: "991px and above";
+  }
+
 }
