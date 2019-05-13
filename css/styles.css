@@ -636,6 +636,18 @@ h4{
    position: relative;
    height: 500px;
  }
+ .articles-heading-div{
+   height: 0;
+ }
+ ..articles-heading-div p:first-of-type{
+   margin-top: 70px;
+ }
+ .articles-heading-div p{
+   display: inline-block;
+ }
+ .latest-articles div:nth-child(2){
+   padding-top: 130px;
+ }
  body::after{
    content: "0px - 700px;"
  }
@@ -837,15 +849,122 @@ h4{
   .ul-wrapper{
     text-align: center;
   }
-  .latest-posts{
-    width: 33%;
-    height: 500px;
-  }
+
 }
 
 @media only screen and (min-width: 991px){
   body::after{
     content: "991px and above";
   }
+  .latest-posts{
+    width: 33%;
+    height: 500px;
+  }
 
+  .menu-items .item figure{
+    width: 2.2em;
+    height: 2.2em;
+  }
+  .menu-items p{
+    margin-top: 10px;
+    display: block;
+    font-style: italic;
+  }
+  .menu-items h3{
+    font-size: 1.58em;
+    margin-bottom: 0;
+  }
+  .articles-heading-div p{
+    font-size: 1.78em;
+  }
+  .signin-div{
+    width: 96%;
+    height: 600px;
+  }
+  .latest-posts-wrapper div:nth-child(6){
+    float: left;
+    width: 60%;
+    height: 600px;
+  }
+  .latest-posts-wrapper div:nth-child(8){
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .latest-posts{
+    height: 600px;
+  }
+  .latest-posts p{
+    font-size: 1.3em;
+  }
+  .latest-posts .date{
+    font-size: 0.8em !important;
+  }
+  .signin-div figure{
+    width: 250px;
+    margin: 0 auto;
+  }
+  .signin-div p:first-of-type{
+    font-size: 1.8em;
+  }
+  .latest-posts-wrapper div:nth-child(8) p:nth-of-type(2){
+    font-size: 1.4em;
+    margin: 50px auto;
+  }
+  .latest-posts-wrapper div:nth-child(12) p:nth-of-type(2){
+    width: 60%;
+    margin: 0 auto 40px auto;
+  }
+  .signin-div .btn{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.3em;
+  }
+  .more-content{
+    width: 130px;
+    height: 130px;
+  }
+  .more-content i {
+    line-height: 130px;
+  }
+  .up-next{
+    padding-top: 10px;
+  }
+  .up-next p:first-of-type{
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+  .up-next p:nth-of-type(2){
+    font-size: 1.9em;
+  }
+  .up-next p:nth-of-type(3){
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.6em;
+    margin-bottom: 50px;
+  }
+  .up-next figure{
+    width: 85%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .up-next figure img{
+    width: 100%;
+    height: 100%;
+  }
+  .up-next .btn{
+    display: block;
+    width: 350px;
+    font-size: 1.4em;
+    margin: 0 auto;
+  }
+  .community-wrapper{
+    position: relative;
+  }
+  .community-links-wrapper{
+    position: absolute;
+    transform: rotate(90deg);
+  }
 }
