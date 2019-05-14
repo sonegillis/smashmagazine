@@ -14,15 +14,14 @@ body{
   margin: 0;
   padding: 0;
 }
-body::after{
-  content: "991px and above";
+/* body::after{
   width: 100%;
   position: fixed;
   bottom: 0;
   color: white;
   text-align: center;
   background-color: black;
-}
+} */
 
 .row::after{
   content: '';
@@ -675,14 +674,14 @@ h4{
    font-size: 0.8em;
  }
 
- body::after{
+ /* body::after{
    content: "0px - 700px;"
- }
+ } */
 
 @media only screen and (min-width: 700px){
-  body::after{
+  /* body::after{
     content: "700px - 991px";
-  }
+  } */
   .menu-items{
     display: block;
     float: left;
@@ -747,7 +746,7 @@ h4{
 
   .articles-heading-div{
       position: absolute;
-      top: 0;
+      top: -80px;
       left: 28%;
       width: 400px;
       margin-top: 40px;
@@ -888,9 +887,9 @@ h4{
 }
 
 @media only screen and (min-width: 991px){
-  body::after{
+  /* body::after{
     content: "991px and above";
-  }
+  } */
   .latest-posts{
     width: 33%;
     height: 500px;
@@ -929,6 +928,7 @@ h4{
   }
   .articles-heading-div{
       left: 34%;
+      top: -80px;
   }
   .articles-heading-div p{
     font-size: 1.78em;
