@@ -56,9 +56,6 @@ body::after{
 }
 .menu-btn:focus {
   background-color: rgba(0,0,0,0.2);
-  .topics {
-    display: block;
-  }
 }
 .fl-right{
   float: right;
@@ -158,6 +155,12 @@ body::after{
 .color-diff3{
   background-color: #d7372a;
 }
+.color-diff4{
+  background-color: rgb(199, 55, 42)
+}
+.color-diff5{
+  background-color: rgb(177, 49, 37)
+}
 .search input{
   padding: 18px 0 18px 36px;
   width: 100%;
@@ -178,9 +181,11 @@ body::after{
   width: 50%;
   padding-bottom: 20px;
   float: left;
+  /* background-color: orange; */
 }
 .ul-wrapper li a{
   color: #fff;
+  font-size: 0.8em;
 }
 .ul-wrapper {
   margin-top: 50px;
@@ -195,6 +200,9 @@ body::after{
   content: "\2022";
   color: rgba(0, 0, 0, 0.6);
 }
+.all-topics .ul-wrapper ul li a{
+  font-size: 0.8em;
+}
 h4{
   color: #fff;
 }
@@ -205,6 +213,11 @@ h4{
   width: 40%;
   margin: 0 auto;
 }
+.toggle-color::after{
+  display: table;
+  content: "";
+  clear: both;
+}
 .toggle-color a{
   display: inline-block;
   border: 1px solid #fff;
@@ -214,9 +227,11 @@ h4{
   color: #d33a2c;
   background-color: #fff;
 }
+.toggle-color2 {
+  display: none;
+}
 .articles-heading {
   background-color: white;
-  padding: 50px auto;
   display: inline-block;
   margin:0;
   font-size: 1.5em;
@@ -348,6 +363,8 @@ h4{
   color: rgba(0, 0, 0, 0.8)
 }
 .more-content{
+  position: absolute;
+  bottom: 0;
   width: 90px;
   height: 80px;
   text-align: center;
@@ -355,6 +372,8 @@ h4{
 }
 .latest-posts{
   cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
 }
 .latest-posts:hover .more-content{
   background-color: #006fc6;
@@ -362,8 +381,7 @@ h4{
 }
 .latest-posts:hover, .guides:hover{
   background-color: #fff;
-  transform: scale(1.04);
-  transition: transform 0.2s;
+  transform: scale(1.01);
   box-shadow: 0 5px 10px 20px rgba(0, 0, 0, 0.05);
 }
 .latest-posts:hover .container-wrapper{
@@ -400,9 +418,16 @@ h4{
   font-size: 1.25em;
   margin-bottom: 40px;
 }
+.news-letter p:first-of-type{
+  font-size: 1.5em !important;
+  margin-bottom: 30px !important;
+}
 .news-letter-wrapper p:nth-child(2n+1){
   margin: 0;
   font-size: 1.2em;
+}
+.news-letter-container{
+  font-size: 0.8em;
 }
 .font-lg-1{
   font-size: 1.56em;
@@ -485,10 +510,10 @@ h4{
   transition: transform 0.2s;
 }
 .community-wrapper .person-of-week figure img {
-  height: 250px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
   margin: auto 150px 150px auto;
-  transform: rotate(15deg);
+  transform: rotate(0deg);
 
 }
 .person-of-week{
@@ -500,7 +525,6 @@ h4{
 }
 .person-of-week p:last-of-type, .shared-content p:first-of-type{
   line-height: 1.6em;
-  opacity: 0.88;
 }
 .person-of-week p:last-of-type a{
   color: black;
@@ -510,10 +534,10 @@ h4{
   border-bottom: 1px solid rgba(0,0,0,0.88);
 }
 .shared-content{
-  clear: both;
+  clear: left;
   padding-top: 2px;
 }
-.shared-content p:first-of-type{
+.shared-content p:last-of-type{
   font-size: 17px;
 }
 .shared h3{
@@ -521,9 +545,16 @@ h4{
 }
 .shared p:first-of-type a{
   color: #000;
+  opacity: 0.85;
 }
-.shared-content p:first-of-type a{
+.shared-content p:last-of-type a{
   color: #006fc6;
+}
+.shared figure{
+  width: 10%
+}
+.shared p:first-of-type{
+  width: 85%;
 }
 .shared {
   margin-top: 70px;
@@ -536,6 +567,7 @@ h4{
 }
 .guides{
   margin-top: 40px;
+  transition: transform 0.2s ease-in-out;
 }
 .guides h6{
   margin-bottom: 8px;
@@ -588,9 +620,7 @@ h4{
   font-style: normal;
   padding-top: 40px;
 }
-.all-topics .ul-wrapper ul li{
-  margin-left: -34px;
-}
+
 .all-topics .ul-wrapper{
   margin-top: 35px;
 }
@@ -611,24 +641,479 @@ h4{
   display: inline-block;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 991px){
-  body::after{
-    content: "767px - 991px";
-  }
-}
+.menu-items{
+   display: none;
+ }
+ .latest-posts{
+   position: relative;
+   height: 500px;
+ }
+ .articles-heading-div{
+   height: 0;
+ }
+ .articles-heading-div p:first-of-type{
+   margin-top: 70px;
+ }
+ .articles-heading-div p{
+   display: inline-block;
+ }
+ .latest-articles div:nth-child(2){
+   padding-top: 130px;
+ }
+ .guides-wrapper div:nth-child(5)::after{
+   clear: both;
+   content: '';
+   display: table;
+ }
+ p{
+   font-family: 'Libre Baskerville', serif;
+ }
+ h1, h2, h3, h4, h5, h6 {
+   font-family: 'Libre Franklin', sans-serif;
+ }
+ .menu-btn-div a i{
+   font-size: 0.8em;
+ }
 
-@media only screen and (max-width: 767px){
-  body::after{
-    content: "479px - 767px";
-  }
-}
+ body::after{
+   content: "0px - 700px;"
+ }
 
-@media only screen and (max-width: 479px){
+@media only screen and (min-width: 700px){
   body::after{
-    content: "0 - 479px";
+    content: "700px - 991px";
   }
- .menu-items{
+  .menu-items{
+    display: block;
+    float: left;
+    width: 80%;
+  }
+  .logo{
+    width: 6%;
+  }
+  .menu-btn-div{
+    float: left;
+    width: 14%;
+  }
+  .menu-btn-div, .logo{
+    margin-top: 20px;
+  }
+
+  .menu-items .item{
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .menu-items figure{
+    width: 2em;
+    height: 2em;
+    transform: rotate(-10deg);
+    display: block;
+    margin: 20px auto;
+  }
+  .menu-items a {
+    color: white;
+  }
+  .menu-items .item:hover a {
+    color: black;
+  }
+  .menu-items .item:hover figure{
+    transform: rotate(0deg);
+  }
+  .menu-items figure img{
+    width: 100%;
+    height: 100%;
+  }
+  .menu-items p{
     display: none;
   }
+  .article {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 500px;
+    z-index: 0;
+  }
+  .article .arrow{
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .pd-top-150{
+      padding-top: 150px;
+  }
 
+  .articles-heading-div{
+      position: absolute;
+      top: 0;
+      left: 28%;
+      width: 400px;
+      margin-top: 40px;
+      z-index: 1;
+  }
+
+  .latest-articles::after{
+    clear: both;
+    display: table;
+    content: "";
+  }
+  .latest-articles{
+    position: relative;
+  }
+  .latest-posts{
+    width: 50%;
+    float: left;
+  }
+  .signin-div{
+    margin: 50px auto;
+    width: 86%;
+  }
+  .guides{
+    width: 50%;
+    float: left;
+  }
+  .sm-nav{
+    display: none;
+  }
+  .person-of-week .person-img{
+    float: left;
+    width: 40%;
+  }
+  .person-of-week figure{
+    margin-top: 50px;
+  }
+  .person-of-week p:nth-child(2), .shared p{
+    font-size: 1.2em !important;
+  }
+  .person-of-week .about{
+    float: right;
+    width: 60%;
+  }
+  .person-of-week .about p:first-of-type{
+    margin: 0;
+  }
+  .community-links-wrapper h5:last-of-type{
+    display: inline-block;
+  }
+  .community-links-wrapper{
+    margin-bottom: 60px;
+  }
+  .shared figure{
+    width: 10%;
+  }
+  .shared-content{
+    width: 85%;
+    float: right;
+  }
+  .shared-content p:first-of-type{
+    float: none;
+    margin-top: 0;
+  }
+  .shared::after{
+    clear: both;
+    content: '';
+    display: table;
+  }
+  .smashing-book .container-sm{
+    width: 88%;
+  }
+  .smashing-book figure{
+    margin: 0 auto 50px auto;
+  }
+  .curated-posts-heading p:last-of-type {
+    display: inline-block;
+  }
+  .guides-wrapper .guides{
+    height: 600px;
+  }
+  .guides {
+    margin-top: 10px;
+  }
+  .news-letter-wrapper .news-letter p:first-of-type{
+    font-size: 2.3em;
+    padding-bottom: 30px;
+  }
+  .news-letter figure{
+    width: 400px;
+    margin: 40px auto;
+  }
+  .all-topics{
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .all-topics .footer{
+    position: relative;
+    width: 70%;
+    font-size: 0.8em;
+    margin: 50px auto;
+  }
+  .all-topics figure {
+    position: absolute;
+    width: 200px;
+    left: -200px;
+    top: -100px;
+    height: 200px;
+  }
+  .articles-heading-div{
+      left: 24%;
+  }
+  .ul-wrapper ul li a{
+    font-size: 1em;
+  }
+  .ul-wrapper ul li{
+    float: none;
+    width: auto;
+    display: inline-block;
+  }
+  .ul-wrapper ul li::before{
+    font-weight: 700;
+
+  }
+  .all-topics .ul-wrapper ul li {
+    margin-left: 0;
+  }
+  .ul-wrapper{
+    text-align: center;
+  }
+  .news-letter-container{
+    clear: both;
+  }
+
+  .toggle-color{
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 991px){
+  body::after{
+    content: "991px and above";
+  }
+  .latest-posts{
+    width: 33%;
+    height: 500px;
+  }
+
+  .menu-items .item figure{
+    width: 2.2em;
+    height: 2.2em;
+  }
+  .menu-items p{
+    margin-top: 10px;
+    display: block;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  .menu-items h3{
+    font-size: 1.4em;
+    margin-bottom: 0;
+  }
+  .btn-sm{
+    width: 130px;
+  }
+
+  .menu-btn-div a{
+    padding: 12px;
+  }
+  .menu-btn-div a span{
+    display: none;
+  }
+  .menu-btn-div a::after{
+    content: "Topics";
+    font-size: 1.1em;
+  }
+  .menu-btn-div a i{
+    font-size: 1.1em;
+  }
+  .articles-heading-div{
+      left: 34%;
+  }
+  .articles-heading-div p{
+    font-size: 1.78em;
+  }
+  .signin-div{
+    width: 96%;
+    height: 600px;
+  }
+  .latest-posts-wrapper div:nth-child(6){
+    float: left;
+    width: 60%;
+    height: 600px;
+  }
+  .latest-posts-wrapper div:nth-child(8){
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .latest-posts{
+    height: 600px;
+  }
+  .latest-posts p{
+    font-size: 1.3em;
+  }
+  .latest-posts .date{
+    font-size: 0.8em !important;
+  }
+  .signin-div figure{
+    width: 250px;
+    margin: 0 auto;
+  }
+  .signin-div p:first-of-type{
+    font-size: 1.8em;
+  }
+  .latest-posts-wrapper div:nth-child(8) p:nth-of-type(2){
+    font-size: 1.4em;
+    margin: 50px auto;
+  }
+  .latest-posts-wrapper div:nth-child(12) p:nth-of-type(2){
+    width: 60%;
+    margin: 0 auto 40px auto;
+  }
+  .signin-div .btn{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.3em;
+  }
+  .signin-div .btn-lg{
+    width: 350px;
+  }
+  .more-content{
+    width: 130px;
+    height: 130px;
+  }
+  .more-content i {
+    line-height: 130px;
+  }
+  .up-next{
+    padding-top: 10px;
+  }
+  .up-next p:first-of-type{
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+  .up-next p:nth-of-type(2){
+    font-size: 1.9em;
+  }
+  .up-next p:nth-of-type(3){
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.6em;
+    margin-bottom: 50px;
+  }
+  .up-next figure{
+    width: 85%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .up-next figure img{
+    width: 100%;
+    height: 100%;
+  }
+  .up-next .btn{
+    display: block;
+    width: 450px;
+    font-size: 1.4em;
+    margin: 0 auto;
+  }
+  .community-wrapper, .guides-wrapper{
+    position: relative;
+  }
+  .community-links-wrapper, .curated-posts-heading{
+    position: absolute;
+    transform: rotate(90deg);
+    left: -84px;
+    top: 60px;
+  }
+  .person-of-week .about{
+    margin-top: 50px;
+    width: 70%;
+  }
+  .person-of-week .person-img{
+    width: 20%;
+  }
+  .shared{
+    float: left;
+    width: 50%;
+  }
+  .smashing-book .container-sm{
+    position: relative
+  }
+  .smashing-book .container-lg-1 p:last-of-type{
+    width: 60%;
+  }
+  .smashing-book .container-sm figure{
+    position: absolute;
+    right: 0;
+    top: -80px;
+    width: 230px;
+    height: 330px;
+  }
+  .guides{
+    width: 33.3%;
+  }
+  .news-letter-container{
+    width: 66.6%;
+    float: left;
+    clear: none;
+    font-size: 1em;
+  }
+  .news-letter p:first-of-type{
+    font-size: 2.3em !important;
+  }
+  .body-txt{
+    font-size: 1.6em;
+  }
+  .news-letter .btn, .news-letter input, .news-letter p:last-of-type{
+    width: 40%;
+  }
+  .ul-wrapper li{
+    font-size: 1.6em;
+  }
+  .footer ul{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .toggle-color2{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+  }
+  .toggle-color2 figure{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0 8px 0 0;
+    border-radius: 8px;
+    background-color: white;
+    transform: rotate(-15deg);
+    cursor: pointer;
+  }
+  .toggle-color2 figure svg{
+    transition: transform 0.3s ease-in-out;
+  }
+  .toggle-color2:hover figure svg{
+    transform: rotate(-180deg);
+  }
+  .toggle-color2:hover a{
+     background-color: white;
+     color: #bc3428;
+  }
+  .toggle-color2 figure svg{
+    width: 100%;
+    height: 100%;
+  }
+  .toggle-color2 a{
+    float: left;
+    font-weight: bold;
+    margin: 5px auto auto 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .toggle-color2 .btn-alt{
+    border: 1px solid white;
+  }
 }
