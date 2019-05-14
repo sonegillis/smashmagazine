@@ -56,9 +56,6 @@ body::after{
 }
 .menu-btn:focus {
   background-color: rgba(0,0,0,0.2);
-  .topics {
-    display: block;
-  }
 }
 .fl-right{
   float: right;
@@ -158,6 +155,12 @@ body::after{
 .color-diff3{
   background-color: #d7372a;
 }
+.color-diff4{
+  background-color: rgb(199, 55, 42)
+}
+.color-diff5{
+  background-color: rgb(177, 49, 37)
+}
 .search input{
   padding: 18px 0 18px 36px;
   width: 100%;
@@ -182,6 +185,7 @@ body::after{
 }
 .ul-wrapper li a{
   color: #fff;
+  font-size: 0.8em;
 }
 .ul-wrapper {
   margin-top: 50px;
@@ -209,6 +213,11 @@ h4{
   width: 40%;
   margin: 0 auto;
 }
+.toggle-color::after{
+  display: table;
+  content: "";
+  clear: both;
+}
 .toggle-color a{
   display: inline-block;
   border: 1px solid #fff;
@@ -218,9 +227,11 @@ h4{
   color: #d33a2c;
   background-color: #fff;
 }
+.toggle-color2 {
+  display: none;
+}
 .articles-heading {
   background-color: white;
-  padding: 50px auto;
   display: inline-block;
   margin:0;
   font-size: 1.5em;
@@ -362,6 +373,7 @@ h4{
 .latest-posts{
   cursor: pointer;
   position: relative;
+  transition: transform 0.2s ease-in-out;
 }
 .latest-posts:hover .more-content{
   background-color: #006fc6;
@@ -369,8 +381,7 @@ h4{
 }
 .latest-posts:hover, .guides:hover{
   background-color: #fff;
-  transform: scale(1.04);
-  transition: transform 0.2s;
+  transform: scale(1.01);
   box-shadow: 0 5px 10px 20px rgba(0, 0, 0, 0.05);
 }
 .latest-posts:hover .container-wrapper{
@@ -556,6 +567,7 @@ h4{
 }
 .guides{
   margin-top: 40px;
+  transition: transform 0.2s ease-in-out;
 }
 .guides h6{
   margin-bottom: 8px;
@@ -639,7 +651,7 @@ h4{
  .articles-heading-div{
    height: 0;
  }
- ..articles-heading-div p:first-of-type{
+ .articles-heading-div p:first-of-type{
    margin-top: 70px;
  }
  .articles-heading-div p{
@@ -653,6 +665,16 @@ h4{
    content: '';
    display: table;
  }
+ p{
+   font-family: 'Libre Baskerville', serif;
+ }
+ h1, h2, h3, h4, h5, h6 {
+   font-family: 'Libre Franklin', sans-serif;
+ }
+ .menu-btn-div a i{
+   font-size: 0.8em;
+ }
+
  body::after{
    content: "0px - 700px;"
  }
@@ -676,6 +698,7 @@ h4{
   .menu-btn-div, .logo{
     margin-top: 20px;
   }
+
   .menu-items .item{
     float: left;
     width: 20%;
@@ -834,7 +857,7 @@ h4{
     height: 200px;
   }
   .articles-heading-div{
-      left: 34%;
+      left: 24%;
   }
   .ul-wrapper ul li a{
     font-size: 1em;
@@ -858,6 +881,10 @@ h4{
     clear: both;
   }
 
+  .toggle-color{
+    visibility: hidden;
+  }
+
 }
 
 @media only screen and (min-width: 991px){
@@ -877,10 +904,31 @@ h4{
     margin-top: 10px;
     display: block;
     font-style: italic;
+    font-size: 0.8em;
   }
   .menu-items h3{
-    font-size: 1.58em;
+    font-size: 1.4em;
     margin-bottom: 0;
+  }
+  .btn-sm{
+    width: 130px;
+  }
+
+  .menu-btn-div a{
+    padding: 12px;
+  }
+  .menu-btn-div a span{
+    display: none;
+  }
+  .menu-btn-div a::after{
+    content: "Topics";
+    font-size: 1.1em;
+  }
+  .menu-btn-div a i{
+    font-size: 1.1em;
+  }
+  .articles-heading-div{
+      left: 34%;
   }
   .articles-heading-div p{
     font-size: 1.78em;
@@ -928,6 +976,9 @@ h4{
     margin: 0 auto;
     font-size: 1.3em;
   }
+  .signin-div .btn-lg{
+    width: 350px;
+  }
   .more-content{
     width: 130px;
     height: 130px;
@@ -964,7 +1015,7 @@ h4{
   }
   .up-next .btn{
     display: block;
-    width: 350px;
+    width: 450px;
     font-size: 1.4em;
     margin: 0 auto;
   }
@@ -1025,5 +1076,44 @@ h4{
   .footer ul{
     width: 60%;
     margin: 0 auto;
+  }
+  .toggle-color2{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+  }
+  .toggle-color2 figure{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0 8px 0 0;
+    border-radius: 8px;
+    background-color: white;
+    transform: rotate(-15deg);
+    cursor: pointer;
+  }
+  .toggle-color2 figure svg{
+    transition: transform 0.3s ease-in-out;
+  }
+  .toggle-color2:hover figure svg{
+    transform: rotate(-180deg);
+  }
+  .toggle-color2:hover a{
+     background-color: white;
+     color: #bc3428;
+  }
+  .toggle-color2 figure svg{
+    width: 100%;
+    height: 100%;
+  }
+  .toggle-color2 a{
+    float: left;
+    font-weight: bold;
+    margin: 5px auto auto 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .toggle-color2 .btn-alt{
+    border: 1px solid white;
   }
 }
