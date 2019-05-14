@@ -940,7 +940,7 @@ h4{
   .latest-posts-wrapper div:nth-child(6){
     float: left;
     width: 60%;
-    height: 600px;
+    height: 680px;
   }
   .latest-posts-wrapper div:nth-child(8){
     content: '';
@@ -948,10 +948,13 @@ h4{
     display: table;
   }
   .latest-posts{
-    height: 600px;
+    height: 700px;
   }
   .latest-posts p{
     font-size: 1.3em;
+  }
+  .shared{
+    height: 300px;
   }
   .latest-posts .date{
     font-size: 0.8em !important;
