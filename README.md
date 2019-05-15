@@ -1,5 +1,5 @@
 # smashmagazine
-A webpage that demonstrates the visual hierachy of the [smashmagazine](https://www.smashingmagazine.com/) homepage. You can find the live version of the page [here](https://github.com/sonegillis.github.io/smashmagazine/).
+A webpage that demonstrates the visual hierachy of the [smashmagazine](https://www.smashingmagazine.com/) homepage. You can find the live version of the page [here](https://sonegillis.github.io/smashmagazine/).
 
 
 ## Preliquisites
