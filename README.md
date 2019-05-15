@@ -1,5 +1,5 @@
-# smashmagazine-clone
-A webpage that clones the that of the [smashmagazine](https://www.smashingmagazine.com/) homepage. You can find the live version of the page [here](https://github.com/sonegillis.github.io/smashmagazine-clone/).
+# smashmagazine
+A webpage that demonstrates the visual hierachy of the [smashmagazine](https://www.smashingmagazine.com/) homepage. You can find the live version of the page [here](https://github.com/sonegillis.github.io/smashmagazine/).
 
 
 ## Preliquisites
@@ -7,7 +7,7 @@ A webpage that clones the that of the [smashmagazine](https://www.smashingmagazi
 2. Web browser(chrome).
 
 ## Getting Started
-1. Open the terminal and enter the command `git clone https://github.com/sonegillis/smashmagazine-clone.git`.
+1. Open the terminal and enter the command `git clone https://github.com/sonegillis/smashmagazine.git`.
 2. Navigate to the directory of the cloned repository.
 3. Open the file `index.hmtl` using a browser
 
