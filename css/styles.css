@@ -1,11 +1,3 @@
-*, *:after, *:before{
-  box-sizing: border-box;
-}
-
-.main-nav{
-  background-color: #d33a2c;
-}
-
 .logo img{
   height: 4.2em;
   width: 4.2em;
@@ -13,6 +5,24 @@
 body{
   margin: 0;
   padding: 0;
+}
+color-diff0{
+  background-color: #F0F0F0
+}
+.color-diff1 {
+  background-color: #B8B8B8;
+}
+.color-diff2{
+  background-color: #484848;
+}
+.color-diff3{
+  background-color: #383838;
+}
+.color-diff4{
+  background-color: #282828;
+}
+.color-diff5{
+  background-color: #181818;
 }
 /* body::after{
   width: 100%;
@@ -28,22 +38,7 @@ body{
   clear: both;
   display: table;
 }
-[class*='col-']{
-  float: left;
-}
-.topics .col-1-2{
-  width: 50%;
-}
-.col-1-5{
-  width: 20%;
-}
-.col-1-4{
-  width: 24%;
-}
-.row{
-  width: 90%;
-  margin: 0 auto;
-}
+
 .main-nav a {
   text-decoration: none;
 }
@@ -51,10 +46,8 @@ body{
   color: black
 }
 .faint-black-on-hover a:hover{
+  color: #000;
   color: rgba(0, 0, 0, 0.6);
-}
-.menu-btn:focus {
-  background-color: rgba(0,0,0,0.2);
 }
 .fl-right{
   float: right;
@@ -83,7 +76,6 @@ body{
 }
 .smashing-book{
   padding-top: 30px;
-  background-color: #d33a2c;
 }
 .smashing-book figure{
   height: 250px;
@@ -103,7 +95,6 @@ body{
 }
 
 .btn-alt{
-  background-color: inherit;
   border: 3px solid white;
   color: white;
   border-radius: 8px;
@@ -124,12 +115,7 @@ body{
 .pd-top-20{
   padding-top: 20px;
 }
-.bg-blue{
-  background-color: blue;
-}
-.bg-green{
-  background-color: green;
-}
+
 .sm-nav{
   text-align: center;
 }
@@ -142,40 +128,7 @@ body{
 .no-mg {
   margin: 0;
 }
-/* background color fot the articles and jobs on the main-nav*/
-.color-diff1{
-  background-color: #bc3428;
-}
-/* background color for events on the main-nav */
-.color-diff2{
-  background-color: #c13125;
-}
-/* background color for books and membership on the main-nav */
-.color-diff3{
-  background-color: #d7372a;
-}
-.color-diff4{
-  background-color: rgb(199, 55, 42)
-}
-.color-diff5{
-  background-color: rgb(177, 49, 37)
-}
-.search input{
-  padding: 18px 0 18px 36px;
-  width: 100%;
-  background: url("../images/search.png") 10px 50% no-repeat,
-              #fff no-repeat;
-  background-size: 1.4em 1.4em;
-  border-radius: 8px;
-  border: 1px solid #d33a2c;
-  margin-bottom: 13px;
-}
-.search input:focus{
-  border: 2.3px dotted black;
-}
-.search img{
-  width: 7.5em;
-}
+
 .ul-wrapper li{
   width: 50%;
   padding-bottom: 20px;
@@ -197,14 +150,13 @@ body{
   font-weight: bold;
   width: 0.4em;
   content: "\2022";
+  color: #000;
   color: rgba(0, 0, 0, 0.6);
 }
 .all-topics .ul-wrapper ul li a{
   font-size: 0.8em;
 }
-h4{
-  color: #fff;
-}
+
 .txt-center{
   text-align: center;
 }
@@ -224,13 +176,11 @@ h4{
 }
 .toggle-color a:hover{
   color: #d33a2c;
-  background-color: #fff;
 }
 .toggle-color2 {
   display: none;
 }
 .articles-heading {
-  background-color: white;
   display: inline-block;
   margin:0;
   font-size: 1.5em;
@@ -250,28 +200,31 @@ h4{
   padding-top: 50px;
 }
 
-.article h2 small {
+.article small {
   font-size: 0.6em;
 }
 
-.article h2 small i{
+.article small i{
   margin-right: 4px;
 }
 
 .article .author figure img, .shared figure img{
   height: 55px;
   width: 55px;
-  border: 4px solid #fff;
-  border-radius: 4px;
-  transform: rotate(-10deg);
-  transition: transform 0.2s;
-
-  margin-top: 20px;
+  transform: rotate(10deg) scale(1.25);
 }
-.shared figure img{
+.article .author figure, .shared figure{
   border: 4px solid #bc3428;
-  margin: 0 20px 0 0;
+  border-radius: 4px;
+  transform: rotate(-10deg) scale(0.8);
+  transition: transform 0.2s;
+  margin-top: 20px;
+  overflow: hidden;
 }
+/* .shared figure img{
+
+  margin: 0 20px 0 0;
+} */
 .article .author figure img:hover, .shared figure img:hover {
   transform: rotate(0deg);
   transition: transform 0.2s;
@@ -302,6 +255,7 @@ h4{
 .article-topics ul li:before {
   display: inline-block;
   content: '#';
+  color: #000;
   color: rgba(0,0,0,0.5);
   width: 0.3em;
   margin-right: 8px;
@@ -318,7 +272,7 @@ h4{
 .line{
   width: 80px;
   height: 2px;
-  background-color: #000;
+
   margin: 40px auto 2px 10px;
 }
 .inline-b{
@@ -334,16 +288,14 @@ h4{
   text-transform: uppercase;
   font-size: 0.75em;
 }
-.latest-posts h1 a{
+.latest-posts a{
   color: #000;
   font-size: 0.8em;
 }
-.latest-posts h1 a:hover{
+.latest-posts a:hover{
   color: red;
 }
-.latest-posts-wrapper, .guides-wrapper{
-  background-color: #f6f3f2
-}
+
 .mg-top-25{
   margin-top: 25px;
 }
@@ -351,6 +303,7 @@ h4{
   margin-top: 50px;
 }
 .post-author a, .post-author{
+  color: #000;
   color: rgba(0, 0, 0, 0.7);
   font-weight: bold;
 }
@@ -359,6 +312,7 @@ h4{
 }
 .post-content{
   line-height: 1.7;
+  color: #000;
   color: rgba(0, 0, 0, 0.8)
 }
 .more-content{
@@ -374,14 +328,20 @@ h4{
   position: relative;
   transition: transform 0.2s ease-in-out;
 }
+.latest-posts:hover{
+  background-color: #F0F0F0;
+}
 .latest-posts:hover .more-content{
-  background-color: #006fc6;
   color: #fff;
+  background-color: #484848;
 }
 .latest-posts:hover, .guides:hover{
-  background-color: #fff;
   transform: scale(1.01);
+  box-shadow: 0 5px 10px 20px #000;
   box-shadow: 0 5px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.guides:hover{
+  background-color: #F0F0F0;
 }
 .latest-posts:hover .container-wrapper{
   transform: scale(0.96);
@@ -406,6 +366,7 @@ h4{
 .signin-div p a, .up-next p a, .smashing-book p a, .news-letter-wrapper p a{
   color: #fff;
   text-decoration: none;
+  border-bottom: 3px solid #000;
   border-bottom: 3px solid rgba(255, 255, 255, 0.5)
 }
 .signin-div p, .up-next p, .smashing-book p, .news-letter-wrapper p{
@@ -418,8 +379,8 @@ h4{
   margin-bottom: 40px;
 }
 .news-letter p:first-of-type{
-  font-size: 1.5em !important;
-  margin-bottom: 30px !important;
+  font-size: 1.5em;
+  margin-bottom: 30px;
 }
 .news-letter-wrapper p:nth-child(2n+1){
   margin: 0;
@@ -450,10 +411,8 @@ h4{
   font-weight: bold;
 }
 .btn-primary{
-  background-color: #fff;
   padding: 14px 18px;
   border-radius: 8px;
-  box-sizing: content-box;
 }
 .btn i{
   font-size: 0.5em;
@@ -487,7 +446,6 @@ h4{
   color: red;
 }
 .up-next{
-  background-color: #1b75bb;
   color: #fff;
   padding-top: 50px;
 }
@@ -495,7 +453,6 @@ h4{
   margin-left: 0;
 }
 .community-wrapper .person-of-week figure {
-  border: 4px solid #c13125;
   transform: rotate(-15deg);
   transition: transform 0.2s;
   width: 200px;
@@ -530,6 +487,7 @@ h4{
 }
 .person-of-week p:last-of-type .thick-underline{
   text-decoration: none;
+  border-bottom: 1px solid #000;
   border-bottom: 1px solid rgba(0,0,0,0.88);
 }
 .shared-content{
@@ -539,9 +497,7 @@ h4{
 .shared-content p:last-of-type{
   font-size: 17px;
 }
-.shared h3{
-  font-size: 1.5em;
-}
+
 .shared p:first-of-type a{
   color: #000;
   opacity: 0.85;
@@ -568,9 +524,7 @@ h4{
   margin-top: 40px;
   transition: transform 0.2s ease-in-out;
 }
-.guides h6{
-  margin-bottom: 8px;
-}
+
 .guides a{
   color: #006fc6;
   font-size: 1.12em;
@@ -589,7 +543,6 @@ h4{
   padding-left: 10px;
 }
 .news-letter-container{
-  background-color: #bc3428;
   padding: 40px 20px;
   border-radius: 10px;
   margin-top: 60px;
@@ -614,7 +567,6 @@ h4{
 }
 .all-topics{
   position: relative;
-  background-color: #d33a2c;
   color: #fff;
   font-style: normal;
   padding-top: 40px;
@@ -656,9 +608,7 @@ h4{
  .articles-heading-div p{
    display: inline-block;
  }
- .latest-articles div:nth-child(2){
-   padding-top: 130px;
- }
+
  .guides-wrapper div:nth-child(5)::after{
    clear: both;
    content: '';
@@ -784,7 +734,7 @@ h4{
     margin-top: 50px;
   }
   .person-of-week p:nth-child(2), .shared p{
-    font-size: 1.2em !important;
+    font-size: 1.2em;
   }
   .person-of-week .about{
     float: right;
@@ -793,9 +743,7 @@ h4{
   .person-of-week .about p:first-of-type{
     margin: 0;
   }
-  .community-links-wrapper h5:last-of-type{
-    display: inline-block;
-  }
+
   .community-links-wrapper{
     margin-bottom: 60px;
   }
@@ -905,10 +853,7 @@ h4{
     font-style: italic;
     font-size: 0.8em;
   }
-  .menu-items h3{
-    font-size: 1.4em;
-    margin-bottom: 0;
-  }
+
   .btn-sm{
     width: 130px;
   }
@@ -957,7 +902,7 @@ h4{
     height: 300px;
   }
   .latest-posts .date{
-    font-size: 0.8em !important;
+    font-size: 0.8em;
   }
   .signin-div figure{
     width: 250px;
@@ -1065,7 +1010,7 @@ h4{
     font-size: 1em;
   }
   .news-letter p:first-of-type{
-    font-size: 2.3em !important;
+    font-size: 2.3em;
   }
   .body-txt{
     font-size: 1.6em;
@@ -1092,7 +1037,6 @@ h4{
     height: 50px;
     margin: 0 8px 0 0;
     border-radius: 8px;
-    background-color: white;
     transform: rotate(-15deg);
     cursor: pointer;
   }
@@ -1103,7 +1047,6 @@ h4{
     transform: rotate(-180deg);
   }
   .toggle-color2:hover a{
-     background-color: white;
      color: #bc3428;
   }
   .toggle-color2 figure svg{
